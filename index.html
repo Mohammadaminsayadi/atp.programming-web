@@ -3,64 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه لاگین با شماره همراه</title>
+    <title>صفحه اصلی</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .login-container h1 {
-            margin-bottom: 20px;
-            font-size: 24px;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
             text-align: center;
         }
-        .login-container label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .login-container input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #28a745;
-            border: none;
-            border-radius: 4px;
+        nav {
+            background-color: #444;
             color: #fff;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 10px;
+            text-align: center;
         }
-        .login-container button:hover {
-            background-color: #218838;
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>ورود</h1>
-        <form action="/login" method="post">
-            <label for="phone">شماره همراه</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
-            <label for="password">رمز عبور</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">ورود</button>
-        </form>
-    </div>
+    <header>
+        <h1>به سایت ما خوش آمدید</h1>
+    </header>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#">درباره ما</a>
+        <a href="#">خدمات</a>
+        <a href="#">تماس با ما</a>
+    </nav>
+    <main>
+        <h2>صفحه اصلی</h2>
+        <p>این یک نمونه ساده از صفحه اصلی یک وبسایت است. شما می‌توانید این کد را تغییر دهید و به دلخواه خود سفارشی کنید.</p>
+    </main>
+    <footer>
+        <p>© 2024 تمامی حقوق محفوظ است.</p>
+    </footer>
 </body>
 </html>
+
