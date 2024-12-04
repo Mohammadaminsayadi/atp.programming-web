@@ -3,70 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نصبینو</title>
+    <title>سایت شخصی</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            direction: rtl;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #0078d7;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
         nav a {
-            color: #fff;
-            margin: 0 10px;
+            color: white;
+            padding: 10px 20px;
             text-decoration: none;
+            display: block;
         }
-        main {
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
             padding: 20px;
+            text-align: center;
         }
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>به نصبینو خوش آمدید</h1>
+        <h1>سایت شخصی من</h1>
+        <p>محلی برای اشتراک برنامه‌های من</p>
     </header>
     <nav>
-        <a href="#">خانه</a>
-        <a href="#">درباره ما</a>
-        <a href="#">خدمات</a>
-        <a href="#">آپلود فایل</a>
-</head>
-<body>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label for="file">انتخاب فایل:</label>
-        <input type="file" name="file" id="file" accept=".apk">
-        <input type="submit" value="آپلود فایل">
-    </form>
-</body>
-</html>
+        <a href="#home">صفحه اصلی</a>
+        <a href="#apps">برنامه‌ها</a>
+        <a href="#contact">تماس با من</a>
     </nav>
-    <main>
-        <h2>نصبینو</h2>
-        <p> با نصبینومی توانی برنامه های خودتو به اشتراک بزاری</p>
-    </main>
+    <div class="container" id="home">
+        <h2>خوش آمدید!</h2>
+        <p>این سایت جایی است که برنامه‌های ساخته شده توسط من را می‌توانید مشاهده و دانلود کنید.</p>
+    </div>
+    <div class="container" id="apps">
+        <h2>برنامه‌های من</h2>
+        <ul>
+            <li><strong>برنامه ۱:</strong> توضیحات کوتاه <a href="#">دانلود</a></li>
+            <li><strong>برنامه ۲:</strong> توضیحات کوتاه <a href="#">دانلود</a></li>
+            <li><strong>برنامه ۳:</strong> توضیحات کوتاه <a href="#">دانلود</a></li>
+        </ul>
+    </div>
+    <div class="container" id="contact">
+        <h2>تماس با من</h2>
+        <p>ایمیل: yourname@example.com</p>
+    </div>
     <footer>
-        <p>© 2024 تمامی حقوق محفوظ است.</p>
+        <p>کپی‌رایت © ۲۰۲۴ - تمامی حقوق محفوظ است</p>
     </footer>
 </body>
 </html>
